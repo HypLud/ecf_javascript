@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+header {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #ccc;
+}
+
+#input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+#checkbox {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="search"] {
+    width: 350px;
+    padding: 10px 5px;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+#range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #F5F5F5;
+    transition: 0.5s;
+}
+
+/*  RESPONSIVE PARTIE HEADER */
+@media screen and (max-width: 760px) {
+    header {
+        flex-direction: column;
+        align-items: space-between;
+        gap: 20px;
+    }
+
+    #input {
+        flex-direction: column;
+        align-items: space-between;
+    }
+
+    input[type="search"] {
+        margin-bottom: 20px;
+    }
+
+    #checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: solid 1px #ccc;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card a {
+    color: #000;
+}
+
+.card a:hover {
+    color: #000;
+    text-decoration: underline;
+}
